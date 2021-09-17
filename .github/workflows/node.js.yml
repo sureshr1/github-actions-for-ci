@@ -3,7 +3,12 @@
 
 name: Node CI
 
-on: [push]
+on:
+  push:
+    branches:
+      - main
+    paths:
+    - finalworkflow.md 
 
 jobs:
   build:
